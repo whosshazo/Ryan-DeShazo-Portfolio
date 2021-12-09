@@ -1,0 +1,214 @@
+
+:root {
+    --primary-color: #fef9f8;
+    --secondary-color: #ef9273;
+    --text-color: #0d0d0d;
+}
+
+
+
+/* * {
+    margin: 25;
+    padding: 25;
+    box-sizing: border-box;
+} */
+
+
+
+/* HEADER STYLING */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 35px;
+    background-color: var(--primary-color);
+    background-position: 80%;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--text-color);
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+header nav {
+    margin: 7px 0;
+
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    /*text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+}
+
+/* ABOUT ME STYLING */
+
+#hero {
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-me {
+    width: 35%;
+    text-align: right;
+    margin: 1.5%;
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.selfie {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    border: solid 
+}
+
+/* CURRENT WORK STYLING */
+
+/* #currents {
+    background: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.works {
+    display: flex;
+    align-content: space-between;
+    
+}
+
+.current-work h2 {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.current-work{
+    display: flex;
+    
+}
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+
+.works {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    width: 65%;
+    line-height: 1.5;
+}
+ */
+ .flex-row {
+    display: flex;
+}
+#section-title {
+    width: 80%
+}
+
+.primary-border {
+    border-color: #fce138;
+}
+
+.secondary-border {
+    border-color: #39a6b2;
+}
+ .trainers {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.trainer {
+    flex: 1;
+    margin: 20px;
+    background: #024e76;
+    color: #fce138;
+}
+.trainer img {
+    width: 100%;
+}
+.trainer-bio {
+    padding: 25px;
+    width: 65%;
+    line-height: 1.3;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.trainer-bio h3 {
+    font-size: 28px;
+}
+.trainer-bio h4 {
+    font-weight: lighter;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.trainer-bio p {
+    font-size: 17px;
+}
+
+
+
+/* REACH OUT SECTION */
+
+#collab {
+    background: var(--primary-color);
+}
+
+/* FOOTER STYLING */
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background: var(--primary-color);
+    width: 100%;
+    padding: 20px;
+}
+
+footer h2 {
+    display: flex;
+    text-align: center;
+    justify-items: center;
+    color: var(--text-color);
+    font-size: 30px;
+}
+
+/* CONTACT FORM STYLERS */
+
+.contact-form {
+
+}
+
+
+
