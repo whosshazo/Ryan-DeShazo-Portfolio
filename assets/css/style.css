@@ -17,13 +17,21 @@
 
 /* HEADER STYLING */
 
+body {
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
 header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 20px 35px;
+    padding: 10px 35px;
     background-color: var(--primary-color);
     background-position: 80%;
+    z-index: 9999;
 }
 
 header h1 {
@@ -55,6 +63,10 @@ header nav ul li a {
     /*text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
 }
 
+header nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
 /* ABOUT ME STYLING */
 
 #hero {
@@ -66,7 +78,7 @@ header nav ul li a {
 
 .about-me {
     width: 35%;
-    text-align: right;
+    text-align: left;
     margin: 1.5%;
     color: var(--text-color);
     font-size: 18px;
@@ -78,122 +90,165 @@ header nav ul li a {
     justify-content: center;
     flex-wrap: wrap;
     margin: 20px;
-    border: solid 
+    border: solid; 
 }
 
 /* CURRENT WORK STYLING */
 
-/* #currents {
+
+#currents {
     background: var(--secondary-color);
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    padding: 15 0 15 0;
 }
 
-.works {
-    display: flex;
-    align-content: space-between;
-    
-}
-
-.current-work h2 {
-    display: flex;
-    justify-content: space-evenly;
-    
-}
-
-.current-work{
-    display: flex;
-    
-}
-
-.work {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-}
-
-.works {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 15px;
-    width: 65%;
-    line-height: 1.5;
-}
- */
  .flex-row {
     display: flex;
+    padding-top: 150;
 }
 #section-title {
-    width: 80%
+    width: 80%;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+    font-size: 48px;
+    color: var(--text-color);
+    border-bottom: 3px solid;
 }
+
 
 .primary-border {
-    border-color: #fce138;
+    border-color: var(--primary-color);
 }
 
-.secondary-border {
-    border-color: #39a6b2;
-}
- .trainers {
+ .sites {
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-
-.trainer {
+.work {
     flex: 1;
     margin: 20px;
-    background: #024e76;
-    color: #fce138;
+    background: var(--primary-color);
+    color: var(--text-color);
+    justify-content:space-evenly;
 }
-.trainer img {
+.work img {
     width: 100%;
 }
-.trainer-bio {
+.site-info {
     padding: 25px;
     width: 65%;
     line-height: 1.3;
-}
-.text-left {
-    text-align: left;
-}
-.text-right {
-    text-align: right;
-}
-.trainer-bio h3 {
-    font-size: 28px;
-}
-.trainer-bio h4 {
-    font-weight: lighter;
-    font-size: 22px;
-    margin-bottom: 15px;
-}
-.trainer-bio p {
-    font-size: 17px;
+    align-content: center;
 }
 
+.site-info h3 {
+    font-size: 28px;
+    text-align: left;
+}
+
+.site-info p {
+    font-size: 17px;
+    color: var(--text-color);
+    text-align: left;
+}
+
+.site-info a {
+    color: var(--text-color)
+}
 
 
 /* REACH OUT SECTION */
 
 #collab {
     background: var(--primary-color);
+    
 }
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-form h3 {
+    text-align: center;
+    
+}
+
+.contact-form p {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-form input, .contact-form textarea {
+    border: 1px solid var(--secondary-color);
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: var(--secondary-color);
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.contact-form input:focus {
+    background-color: white;
+    outline: none;
+}
+
+.contact-form button {
+    width: 50%;
+    border: none;
+    background: var(--secondary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+#contact-name {
+    text-align: center;
+}
+
+#contact-message {
+    text-align: center;
+}
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form button:hover {
+    color: var(--secondary-color);
+    background: var(--text-color);
+}
+
+
 
 /* FOOTER STYLING */
 
 footer {
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
     background: var(--primary-color);
     width: 100%;
-    padding: 20px;
+    padding: 5px;
 }
 
 footer h2 {
@@ -204,11 +259,56 @@ footer h2 {
     font-size: 30px;
 }
 
-/* CONTACT FORM STYLERS */
 
-.contact-form {
 
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+    }
+    header h1 {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    header nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 80%;
+    }
+
+    header nav ul li a {
+        font-size: 25px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    footer {
+        text-align: center;
+        width: 100%;
+    }
+   body {
+       margin: 0 100px 10 100px;
+       flex: 2 100;
+   }
+
+   .about-me p {
+       display: flex;
+   }
+
+    #currents {
+        width: 100%;
+    }
+
+    #collab {
+        justify-content: center;
+    }
+    .work {
+        flex: 0 70;
+    }
+    .container {
+        flex: 1 100%;
+    }
 }
-
-
-
