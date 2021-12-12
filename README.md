@@ -9,3 +9,12 @@
     I wanted to make my current work section easy to add on to. In the future as I better my skills, I want to make this an interactive portion of the page. The view will be able to scroll left or right and choose between an array of different projects. I figured the best way to set this up would be to use cards and evenly space them between themselves. The viewer will get a picture of what the site looks like as well as a brief discription. I also added a link so the viewer can go the the site and explore for themselves if they choose. 
 
     I like the thought of giving the viewer the choice to get in touch so I added a form to the bottom. The form is simple and centered on the page. It also has a pseudo class to change the color of the text when they type as well as the submit button. In my opinion this give the page a little spice for the viewer. 
+
+    Lastly I tried to make my page responsive so the viewer would feel comfortable reading on any device. I added my media query and went section by section playing with it until every section was clear and elgable on all the average device sizes. my best friend in doing this was the Inspector tool. inside the inspector, I was able to play with all the flex propeties and find the ones that suited my page this best. 
+
+   I feel my portfolio has a good start and will be easy to add onto as the class continues. I hope to make my site more interactive in the future to really have an impact on any potential views. 
+
+   Thank you,
+   Ryan DeShazo
+   Challenge II - Advanced CSS Chalenge
+   12-12-2021 
