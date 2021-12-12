@@ -265,7 +265,7 @@ footer h2 {
 
 @media screen and (max-width: 980px) {
     header {
-        padding-bottom: 0;
+        display: flex;
         justify-content: center;
     }
     header h1 {
@@ -275,13 +275,12 @@ footer h2 {
     
     header nav ul {
         flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
+        justify-content: center;
         width: 80%;
     }
 
     header nav ul li a {
-        font-size: 25px;
+        font-size: 32px;
         flex-wrap: wrap;
         justify-content: space-between;
     }
@@ -290,12 +289,25 @@ footer h2 {
         width: 100%;
     }
    body {
-       margin: 0 100px 10 100px;
-       flex: 2 100;
+       flex: 1 100;
    }
 
-   .about-me p {
-       display: flex;
+   #hero {
+       flex: 1 100;
+   }
+
+   .about-me {
+       flex: 1 100;
+   }
+
+   .selfie {
+       width: 100%;
+       height: 80%
+   }
+
+   .selfie img {
+       width: 100%;
+       height: 80%;
    }
 
     #currents {
@@ -306,7 +318,7 @@ footer h2 {
         justify-content: center;
     }
     .work {
-        flex: 0 70;
+        flex: 1 100;
     }
     .container {
         flex: 1 100%;
