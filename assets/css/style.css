@@ -129,6 +129,10 @@ header nav ul li a:hover {
     justify-content: space-around;
 }
 
+.site {
+    text-decoration: underline;
+}
+
 .work {
     flex: 1;
     margin: 20px;
@@ -139,6 +143,11 @@ header nav ul li a:hover {
 .work img {
     width: 100%;
 }
+
+.cocky-cocktails {
+    height: 250px;
+}
+
 .site-info {
     padding: 25px;
     width: 65%;
